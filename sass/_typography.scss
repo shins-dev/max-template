@@ -21,4 +21,32 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+  &-heading{
+    font-size: 24px;
+    font-weight: bold;
+    color: $black-25;
+    text-transform: uppercase;
+  }
+  &-t18{
+    font-size: 18px;
+    color: $text-25;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 35px;
+  }
+  &-t16{
+    font-size: 16px;
+    color: #e1e1e1;;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-family: $font-sencondary;
+  }
+  &-desc{
+    font-family: $font-sencondary;
+    font-size: 16px;
+    font-weight: 400;
+    color: $gray-8c;
+    padding-bottom: 40px;
+    line-height: normal;
+  }
 }

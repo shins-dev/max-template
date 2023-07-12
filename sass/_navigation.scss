@@ -26,13 +26,12 @@
       visibility: visible;
       transition: all 0.2s linear;
     }
-    
   }
   &-link {
     &:hover {
       color: $gray-70;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 400;
       transition: all 0.2s linear;
     }
   }
@@ -50,7 +49,6 @@
     top: 100%;
     min-width: 271px;
     max-height: 291px;
-    z-index: 10;
     background-color: $while-ff;
     opacity: 0;
     visibility: hidden;
@@ -67,6 +65,7 @@
       height: 30px;
       transform: translateY(-100%);
       opacity: 0;
+      transition: all 0.2s linear;
     }
   }
   &-item {
@@ -77,10 +76,11 @@
     &:last-of-type {
       border: none;
     }
-    &:hover {
-      font-weight: 500;
+    &:hover > a {
       padding-left: 20px;
       color: $black-25;
+      font-weight: 600;
+      transition: all 0.2s linear;
     }
     &:hover .menu3-choice {
       opacity: 1;
@@ -93,8 +93,9 @@
     color: $gray-8c;
     font-weight: 400;
     &:hover {
-      color: rgb(10, 1, 1);
+      color: $text-25;
       font-weight: 500;
+      transition: all 0.2s linear;
     }
   }
 }
@@ -103,20 +104,19 @@
   margin: 0 30px;
   display: flex;
   flex-direction: column;
-  &-choice{
+  &-choice {
     cursor: pointer;
     position: absolute;
     left: 100%;
     min-width: 271px;
     max-height: 291px;
-    z-index: 10;
     background-color: $while-ff;
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s linear;
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transform: translateY(-30px);
+    transform: translate(-8px, -30px);
     &::after {
       content: " ";
       position: absolute;
@@ -124,11 +124,12 @@
       width: 100%;
       left: 0;
       height: 30px;
-      transform: translateY(100%);
+      transform: translateX(100%);
       opacity: 0;
+      transition: all 0.2s linear;
     }
-}
-  &-item{
+  }
+  &-item {
     list-style-type: none;
     padding: 15px 0;
     border-bottom: 1px solid $gray-8c;
@@ -136,17 +137,18 @@
     &:last-of-type {
       border: none;
     }
-}
-  &-link{
+  }
+  &-link {
     font-size: 14px;
-    color: $gray-8c;
     font-weight: 400;
+    color: $gray-8c;
+
     &:hover {
       color: $text-25;
-      font-weight: 500;
+    font-weight: 600;
       padding-left: 20px;
-      color: red;
+      color: rgb(10, 1, 1);
+      transition: all 0.2s linear;
     }
-
-}
+  }
 }
