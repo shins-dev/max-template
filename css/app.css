@@ -1,0 +1,372 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.wraper {
+  width: 100%;
+  margin: 0 auto;
+  background: #fbfbfb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-select {
+  font-size: 14px;
+  font-weight: bold;
+}
+.text-nav {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+}
+.text-icon {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+}
+.text-title {
+  color: #f3f3f3;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 50px;
+  padding-left: 20px;
+  min-height: 41px;
+  cursor: pointer;
+}
+.select option {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content {
+  max-width: 570px;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.header-select {
+  width: 174px;
+  max-height: 41px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #e1e1e1;
+  padding: 20px 0;
+  gap: 0 10px;
+  position: relative;
+}
+.header-select:nth-child(2) {
+  width: 100px;
+  padding: 0;
+  border: none;
+}
+.header-select:nth-child(2) .select {
+  width: 100%;
+  min-height: 41px;
+  padding-right: 5px;
+}
+.header-select:nth-child(2) .header-checkbox {
+  right: 0;
+}
+.header-checkbox {
+  position: absolute;
+  right: 15px;
+}
+.header-search {
+  position: relative;
+  padding: 0 50px 0 20px;
+  width: 450px;
+}
+.header-icon {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+.header-author {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.header-author i {
+  font-size: 25px;
+  color: #252525;
+}
+.header-author span {
+  font-size: 24px;
+  color: #8c8c8c;
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+}
+.search-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+  line-height: 14px;
+  font-family: "Source Code Pro", monospace;
+}
+.search-icon {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.search-icon a {
+  color: #252525;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.icon-select {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navigation {
+  background-color: #252525;
+}
+
+.navigation-content {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-icon {
+  display: flex;
+  align-items: center;
+  gap: 0 22px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 36px;
+  position: relative;
+}
+.menu-item {
+  list-style-type: none;
+}
+.menu-item:hover .menu2-option {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s linear;
+}
+.menu-link:hover {
+  color: #707070;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+
+.menu2 {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu2-option {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  min-width: 271px;
+  max-height: 291px;
+  z-index: 10;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateY(28px);
+}
+.menu2-option::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 30px;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.menu2-item {
+  list-style-type: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #8c8c8c;
+  font-family: "Source Code Pro", monospace;
+}
+.menu2-item:last-of-type {
+  border: none;
+}
+.menu2-item:hover {
+  font-weight: 500;
+  padding-left: 20px;
+  color: #252525;
+}
+.menu2-item:hover .menu3-choice {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s linear;
+}
+.menu2-link {
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: 400;
+}
+.menu2-link:hover {
+  color: rgb(10, 1, 1);
+  font-weight: 500;
+}
+
+.menu3 {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+.menu3-choice {
+  cursor: pointer;
+  position: absolute;
+  left: 100%;
+  min-width: 271px;
+  max-height: 291px;
+  z-index: 10;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateY(-30px);
+}
+.menu3-choice::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 30px;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.menu3-item {
+  list-style-type: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #8c8c8c;
+  font-family: "Source Code Pro", monospace;
+}
+.menu3-item:last-of-type {
+  border: none;
+}
+.menu3-link {
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: 400;
+}
+.menu3-link:hover {
+  color: #252525;
+  font-weight: 500;
+  padding-left: 20px;
+  color: red;
+}
+
+.hero {
+  background: url(../images/Background2.png) lightgray 50%/cover no-repeat;
+  min-height: 370px;
+}
+
+.hero-main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-title {
+  margin-top: 150px;
+}
+.hero-desc {
+  margin-top: 30px;
+}
+.hero-desc span {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+.hero-desc i {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+
+/*# sourceMappingURL=app.css.map */

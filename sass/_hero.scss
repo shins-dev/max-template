@@ -1,0 +1,31 @@
+.hero {
+  background: url(../images/Background2.png) lightgray 50% / cover no-repeat;
+
+  min-height: 370px;
+}
+.hero {
+  &-main {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &-title {
+    margin-top: 150px;
+  }
+  &-desc {
+    margin-top: 30px;
+    span {
+      font-family: $font-sencondary;
+      font-size: 16px;
+      font-weight: 400;
+      color: #f3f3f3;
+    }
+    i {
+      font-family: $font-sencondary;
+      font-size: 16px;
+      font-weight: 400;
+      color: #f3f3f3;
+    }
+  }
+}
