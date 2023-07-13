@@ -1,0 +1,36 @@
+.customer{
+  margin-top: 60px;
+}
+
+.customer {
+  &-main{
+    
+}
+  &-item{
+    outline: 2px solid #ebebeb;
+    border-radius: 2px;
+    padding: 30px 35px;
+  }
+  &-content{
+    display: flex;
+    gap: 0 20px;
+}
+  &-img{
+    max-width: 103px;
+    max-height: 100px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+  &-author{
+    max-width: 910px;
+}
+  &-name{
+    margin-top: 15px;
+    span{
+      font-family: $font-sencondary;
+    }
+}
+}

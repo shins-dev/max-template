@@ -89,6 +89,7 @@ body {
 .text-select {
   font-size: 14px;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 .text-nav {
   font-size: 14px;
@@ -128,6 +129,13 @@ body {
   padding-bottom: 30px;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
+.text-t14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  line-height: 24px;
+}
 .text-desc {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
@@ -135,6 +143,10 @@ body {
   color: #8c8c8c;
   padding-bottom: 40px;
   line-height: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .header {
@@ -454,6 +466,111 @@ body {
 }
 .abouts-title p {
   max-width: 480px;
+}
+
+.customer {
+  margin-top: 60px;
+}
+
+.customer-item {
+  outline: 2px solid #ebebeb;
+  border-radius: 2px;
+  padding: 30px 35px;
+}
+.customer-content {
+  display: flex;
+  gap: 0 20px;
+}
+.customer-img {
+  max-width: 103px;
+  max-height: 100px;
+}
+.customer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.customer-author {
+  max-width: 910px;
+}
+.customer-name {
+  margin-top: 15px;
+}
+.customer-name span {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+.ourteam {
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
+.ourteam-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+.ourteam-heading::after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  left: auto;
+  right: auto;
+  width: 60px;
+  height: 1px;
+  background-color: #252525;
+}
+.ourteam-heading::before {
+  content: " ";
+  position: absolute;
+  bottom: -15px;
+  left: auto;
+  right: auto;
+  width: 30px;
+  height: 1px;
+  background-color: #252525;
+}
+.ourteam-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 450px;
+  gap: 0 30px;
+}
+.ourteam-item {
+  max-width: 270px;
+}
+.ourteam-image {
+  max-width: 270px;
+  max-height: 330px;
+}
+.ourteam-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ourteam-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px 0;
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ourteam-icon {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  margin-bottom: 20px;
+}
+.ourteam-icon i {
+  color: #707070;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=app.css.map */
