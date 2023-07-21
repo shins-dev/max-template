@@ -1,63 +1,59 @@
-.text {
-  &-select {
+.text{
+  &-select{
     font-size: 14px;
     font-weight: bold;
-    font-family: $font-primary;
   }
-  &-nav {
+  &-nav{
     font-size: 14px;
     text-transform: uppercase;
     color: $while-ff;
     font-weight: 400;
   }
-  &-icon {
+  &-icon{
     font-size: 16px;
     text-transform: uppercase;
     color: $while-ff;
     font-weight: 400;
   }
-  &-title {
+  &-title{
     color: #f3f3f3;
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
   }
-  &-heading {
+  &-heading{
     font-size: 24px;
     font-weight: bold;
     color: $black-25;
     text-transform: uppercase;
   }
-  &-t18 {
+  &-t18{
     font-size: 18px;
     color: $text-25;
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 35px;
   }
-  &-t16 {
+  &-t16{
     font-size: 16px;
-    color: #e1e1e1;
+    color: $gray-70;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     font-family: $font-sencondary;
   }
-  &-t14 {
+  &-t14{
     font-size: 14px;
+    color: $gray-70;
     font-weight: 400;
-    color: #707070;
     font-family: $font-sencondary;
     line-height: 24px;
   }
-  &-desc {
+  &-desc{
     font-family: $font-sencondary;
     font-size: 16px;
     font-weight: 400;
-    color: $gray-8c;
-    padding-bottom: 40px;
-    line-height: normal;
+    color: $gray-70;
+    padding-bottom: 30px;
+    line-height:24px;
   }
-}
-.uppercase {
-  text-transform: uppercase;
 }

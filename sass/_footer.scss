@@ -1,0 +1,132 @@
+.footer {
+  margin-top: 90px;
+  background-color: #252525;
+}
+
+.footer {
+  &-container {
+    padding-top: 90px;
+  }
+  &-list {
+    display: flex;
+    padding-bottom: 80px;
+    border-bottom: 1px solid $gray-8c;
+  }
+  &-item {
+    h2 {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      color: $while-ff;
+      margin-bottom: 30px;
+      padding-top: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: $gray-70;
+      line-height: 24px;
+      font-family: $font-sencondary;
+      margin-bottom: 30px;
+    }
+    &:nth-child(1) {
+      margin-right: 60px;
+    }
+    &:nth-child(2) {
+      margin-right: 30px;
+      max-width: 370px;
+    }
+    &:nth-child(3) {
+      margin-right: 70px;
+      width: 150px;
+    }
+    button {
+      border: 1px solid #fbfbfb;
+      padding: 15px 20px;
+      color: #ffffff;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: $font-sencondary;
+    }
+  }
+  &-logo {
+    width: 150px;
+    a {
+      img {
+        margin-bottom: 45px;
+      }
+    }
+  }
+  &-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      color: $gray-70;
+      font-size: 14px;
+      font-family: $font-sencondary;
+      &:hover {
+        color: $while-ff;
+      }
+    }
+  }
+  &-item-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    span {
+      font-size: 14px;
+      color: $gray-70;
+      font-family: $font-sencondary;
+    }
+  }
+  &-supper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    button {
+      max-width: 150px;
+    }
+    input {
+      padding: 15px 20px;
+      border: none;
+      background-color: $gray-8c;
+      color: #252525;
+      &::placeholder {
+        color: #e2e2e2;
+        font-size: 14px;
+        font-family: $font-sencondary;
+      }
+    }
+  }
+  &-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: $font-sencondary;
+    }
+  }
+  &-botton-icon {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+
+    i {
+      &:hover {
+        color: $gray-70;
+      }
+    }
+  }
+}
+.fz11 {
+  font-size: 100px;
+  color: #363636;
+}
+.fz73 {
+  font-size: 73px;
+  color: #363636;
+}

@@ -89,7 +89,6 @@ body {
 .text-select {
   font-size: 14px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 .text-nav {
   font-size: 14px;
@@ -124,15 +123,15 @@ body {
 }
 .text-t16 {
   font-size: 16px;
-  color: #e1e1e1;
+  color: #707070;
   font-weight: bold;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 .text-t14 {
   font-size: 14px;
-  font-weight: 400;
   color: #707070;
+  font-weight: 400;
   font-family: "Source Sans Pro", Arial, sans-serif;
   line-height: 24px;
 }
@@ -140,13 +139,9 @@ body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #8c8c8c;
-  padding-bottom: 40px;
-  line-height: normal;
-}
-
-.uppercase {
-  text-transform: uppercase;
+  color: #707070;
+  padding-bottom: 30px;
+  line-height: 24px;
 }
 
 .header {
@@ -465,16 +460,32 @@ body {
   flex-direction: column;
 }
 .abouts-title p {
-  max-width: 480px;
+  max-width: 460px;
+}
+.abouts-icon {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  margin-bottom: 15px;
+}
+.abouts-icon i, .abouts-icon p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
 .customer {
   margin-top: 60px;
 }
 
-.customer-item {
+.customer-list {
   outline: 2px solid #ebebeb;
+  position: relative;
+  padding-bottom: 30px;
   border-radius: 2px;
+}
+.customer-item {
   padding: 30px 35px;
 }
 .customer-content {
@@ -496,13 +507,40 @@ body {
 .customer-name {
   margin-top: 15px;
 }
-.customer-name span {
+.customer-name a span {
   font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #252525;
+}
+
+.slick-dots {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  left: 15.5%;
+  top: 78%;
+  transform: translateX(-50%);
+  gap: 0 10px;
+}
+
+.slick-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 100rem;
+  background-color: #252525;
+  font-size: 0;
+}
+
+.slick-dots .slick-active button {
+  width: 30px;
+  height: 8px;
+}
+
+.slick-dotted {
+  padding-bottom: 50px;
 }
 
 .ourteam {
   margin-top: 70px;
-  padding-bottom: 80px;
 }
 
 .ourteam-heading {
@@ -533,14 +571,14 @@ body {
   background-color: #252525;
 }
 .ourteam-list {
+  max-height: 450px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-height: 450px;
-  gap: 0 30px;
+  background-color: #ffffff;
 }
 .ourteam-item {
   max-width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .ourteam-image {
   max-width: 270px;
@@ -552,6 +590,7 @@ body {
   object-fit: cover;
 }
 .ourteam-author {
+  max-width: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -559,7 +598,9 @@ body {
   gap: 15px 0;
   background-color: #f9f9f9;
   padding-top: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ourteam-author span {
+  color: #252525;
 }
 .ourteam-icon {
   margin-top: 10px;
@@ -570,7 +611,185 @@ body {
 }
 .ourteam-icon i {
   color: #707070;
+  font-size: 20px;
+}
+.ourteam-icon i:hover {
+  color: #252525;
+}
+
+.fz18 {
+  font-size: 80px;
+  background-color: red;
+}
+
+.ourteam-list .slick-slide {
+  margin: 0 15px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.slick-prev {
+  background-color: transparent;
+  color: #b7b7b7;
+  left: 0;
+  border: 2px solid #e1e1e1;
+  transform: translateX(-50%);
+}
+
+.slick-next {
+  color: #b7b7b7;
+  right: 0;
+  background-color: transparent;
+  border: 2px solid #e1e1e1;
+  transform: translateX(50%);
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+@media (hover: hover) {
+  .slick-prev:hover, .slick-next:hover {
+    background-color: #252525;
+    color: #f9f9f9;
+  }
+}
+.footer {
+  margin-top: 90px;
+  background-color: #252525;
+}
+
+.footer-container {
+  padding-top: 90px;
+}
+.footer-list {
+  display: flex;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #8c8c8c;
+}
+.footer-item h2 {
+  text-transform: uppercase;
   font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.footer-item p {
+  font-size: 14px;
+  color: #707070;
+  line-height: 24px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  margin-bottom: 30px;
+}
+.footer-item:nth-child(1) {
+  margin-right: 60px;
+}
+.footer-item:nth-child(2) {
+  margin-right: 30px;
+  max-width: 370px;
+}
+.footer-item:nth-child(3) {
+  margin-right: 70px;
+  width: 150px;
+}
+.footer-item button {
+  border: 1px solid #fbfbfb;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.footer-logo {
+  width: 150px;
+}
+.footer-logo a img {
+  margin-bottom: 45px;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+.footer-icon a {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  color: #707070;
+  font-size: 14px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.footer-icon a:hover {
+  color: #ffffff;
+}
+.footer-item-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.footer-item-desc span {
+  font-size: 14px;
+  color: #707070;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.footer-supper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+.footer-supper button {
+  max-width: 150px;
+}
+.footer-supper input {
+  padding: 15px 20px;
+  border: none;
+  background-color: #8c8c8c;
+  color: #252525;
+}
+.footer-supper input::placeholder {
+  color: #e2e2e2;
+  font-size: 14px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.footer-botton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-botton h2 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+.footer-botton-icon {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.footer-botton-icon i:hover {
+  color: #707070;
+}
+
+.fz11 {
+  font-size: 100px;
+  color: #363636;
+}
+
+.fz73 {
+  font-size: 73px;
+  color: #363636;
 }
 
 /*# sourceMappingURL=app.css.map */
